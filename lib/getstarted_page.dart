@@ -25,9 +25,9 @@ class GetstartedPage extends ConsumerWidget {
                 'ZION',
                 style: TextStyle(
                   fontFamily: 'outfit',
-                  letterSpacing: -4.777,
-                  fontSize: 48.sp,
-                  fontWeight: FontWeight.w500,
+                  letterSpacing: -2.777,
+                  fontSize: 49.sp,
+                  fontWeight: FontWeight.w600,
                   color: Themes.fire_red,
                 ),
               ),
@@ -41,7 +41,7 @@ class GetstartedPage extends ConsumerWidget {
                   'RIDER',
                   style: Themes.headline4.copyWith(
                     fontFamily: 'outfit',
-                    fontSize: 22.sp,
+                    fontSize: 37.sp,
                     fontWeight: FontWeight.w300,
                     letterSpacing: 2.0,
                   ),
