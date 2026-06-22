@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "259667167780",
+    "firebase_url": "https://zion3-e453d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "zion3-e453d",
+    "storage_bucket": "zion3-e453d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259667167780:android:135e188e8b26ee2da966b1",
+        "android_client_info": {
+          "package_name": "com.example.zion3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259667167780-ljv0ca38cealj6212gi4dms242b2d47p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zion3",
+            "certificate_hash": "6ad1ba63c4f5db010b45633f72cea1e2eec275a2"
+          }
+        },
+        {
+          "client_id": "259667167780-lnt6flbftk25h4e86pp9m2s5cabbe3q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDosXbu7UzYfyoPwJlVb_WcSPFj-8LtNq4"
+        },
+        {
+          "current_key": "AIzaSyCgVtuMfA8RMmFik_NnnsgBTqbLU0Rx-lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259667167780-lnt6flbftk25h4e86pp9m2s5cabbe3q6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "259667167780-0farff641e5j2mo463licps3rh79h801.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zionDriver4"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259667167780:android:78feb51f0be9e331a966b1",
+        "android_client_info": {
+          "package_name": "com.example.zion_driver_553"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259667167780-29v3qhn1khldsk6e4fdigu9hmamg26fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zion_driver_553",
+            "certificate_hash": "6ad1ba63c4f5db010b45633f72cea1e2eec275a2"
+          }
+        },
+        {
+          "client_id": "259667167780-lnt6flbftk25h4e86pp9m2s5cabbe3q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDosXbu7UzYfyoPwJlVb_WcSPFj-8LtNq4"
+        },
+        {
+          "current_key": "AIzaSyCgVtuMfA8RMmFik_NnnsgBTqbLU0Rx-lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259667167780-lnt6flbftk25h4e86pp9m2s5cabbe3q6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "259667167780-0farff641e5j2mo463licps3rh79h801.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zionDriver4"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

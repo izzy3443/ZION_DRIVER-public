@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlayContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Main Bottom Card (full width, bottom aligned) -->
+    <LinearLayout
+        android:id="@+id/overlayCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="8dp">
+
+        <!-- Header with Fare and Close Button -->
+        <FrameLayout
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/fairAmountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:fontFamily="@font/outfit_bold"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="start"
+                />
+                
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_close"
+                android:background="@drawable/bg_close_button"
+                android:padding="4dp"
+                android:contentDescription="Close"
+                android:clickable="true"
+                android:focusable="true" />
+        </FrameLayout>
+        <!-- Header with Fare and Close ButtonDDDDDDDDDD -->
+        <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EEEEEE"
+    android:layout_marginTop="8dp" />
+
+<LinearLayout
+    android:id="@+id/etaRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="12dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_clock" 
+        android:tint="@android:color/black"
+        android:contentDescription="clock" />
+
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/outfit_medium"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EEEEEE" />
+
+        <!-- Location Info -->
+        <LinearLayout
+            android:id="@+id/locationInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_rounded"
+            android:padding="12dp">
+
+            <!-- Pickup -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:text="📍"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="2dp" />
+
+                <TextView
+                    android:id="@+id/pickupText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="MG Road"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/outfit_regular" />
+            </LinearLayout>
+
+            <!-- Dropoff -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="🚩"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/dropoffText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/outfit_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Accept Button -->
+        <!-- <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/outfit_bold"
+            android:background="@drawable/bg_accept_button"
+            android:elevation="4dp" /> -->
+
+            <!-- res/layout/progressive_accept_button.xml -->
+<FrameLayout
+    android:id="@+id/acceptButtonContainer"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="16dp"
+    android:clipChildren="true">
+
+    <!-- Progress Fill Layer -->
+<View
+    android:id="@+id/progressFill"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/bg_progress_fill"
+    android:clipToOutline="true"
+    android:outlineProvider="background" />
+
+    <!-- Actual Button Layer -->
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Accept"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/outfit_bold"
+        android:background="@drawable/bg_accept_button"
+        android:elevation="4dp" />
+</FrameLayout>
+    </LinearLayout>
+</FrameLayout>

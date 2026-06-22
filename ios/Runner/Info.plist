@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- ================= BASIC ================= -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>Zion Driver 553</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>zion_driver_553</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>$(FLUTTER_BUILD_NAME)</string>
+
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+
+
+    <!-- ================= ORIENTATION ================= -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+
+    <!-- ================= PERMISSIONS ================= -->
+    <key>NSCameraUsageDescription</key>
+    <string>Camera access is required to upload images.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Photo library access is required to select images.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone may be used for voice features.</string>
+
+    <key>NSUserNotificationsUsageDescription</key>
+    <string>Notifications are required for ride updates.</string>
+
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Location is required to provide ride services.</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Location is required in background to update driver position.</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Location access is needed always for driver tracking.</string>
+
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Required to communicate with nearby services.</string>
+
+
+    <!-- ================= BACKGROUND ================= -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>location</string>
+        <string>remote-notification</string>
+    </array>
+
+
+    <!-- ================= NETWORK ================= -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+
+    <!-- ================= FIREBASE ================= -->
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <false/>
+
+
+    <!-- ================= GOOGLE / FIREBASE URL SCHEMES ================= -->
+    <key>CFBundleURLTypes</key>
+    <array>
+
+        <!-- Google Sign-In -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.259667167780-o2v4cdm83ea0ap94nbcv2ba42k5l7rbk</string>
+            </array>
+        </dict>
+
+        <!-- Firebase Phone Auth -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>app-1-259667167780-ios-305dbd50b534fb38a966b1</string>
+            </array>
+        </dict>
+
+    </array>
+
+
+    <!-- ================= 🔥 RAZORPAY UPI FIX (VERY IMPORTANT) ================= -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>upi</string>
+        <string>tez</string>
+        <string>gpay</string>
+        <string>phonepe</string>
+        <string>paytmmp</string>
+        <string>bhim</string>
+        <string>amazonpay</string>
+        <string>cred</string>
+        <string>mobikwik</string>
+        <string>freecharge</string>
+    </array>
+
+</dict>
+</plist>

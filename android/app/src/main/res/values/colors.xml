@@ -1,0 +1,21 @@
+<resources>
+    <!-- Fire red for header, icons -->
+    <color name="fire_red">#E63946</color>
+
+    <!-- Tree green for accept button -->
+    <color name="tree_green">#32BB78</color>
+
+
+    <!-- Optional gray for text -->
+    <color name="gray_text">#6B7280</color>
+
+    <!-- Background -->
+    <color name="overlay_bg">#FFFFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="progress_green">#28a745</color>
+<color name="tree_green_light">#CC32BB78</color> <!-- semi-transparent green -->
+    <color name="tree_green_dark">#32BB78</color>  <!-- Darker progress fill -->
+</resources>

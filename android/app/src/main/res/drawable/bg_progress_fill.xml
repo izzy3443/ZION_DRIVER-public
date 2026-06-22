@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/tree_green_dark" /> <!-- Semi-transparent tree_green -->
+    <corners android:radius="16dp" />
+</shape>
